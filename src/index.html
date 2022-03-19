@@ -7,18 +7,53 @@
 </head>
 <body class="root">
   <header class="header">
-    <div class="header__account-info-container">
-      <span class="header__account-name">name</span>
-      <span class="header__account-balance">12.2</span>
+    <div class="header__account-info-container header__account-info-container_hide" id="account-info-container">
+      <span class="header__account-name"></span>
+      <span class="header__account-balance"></span>
     </div>
-    <button class="header__sigh-button header__sigh-button_sigh-in">Sign in</button>
-    <button class="header__sigh-button header__sigh-button_sigh-out">Sign out</button>
+    <button class="header__sigh-button" id="sigh-button"></button>
   </header>
 
-  <main class="content">test</main>
+  <main class="content" id="content"></main>
 
   <footer class="footer">
     <p class="footer__copyright">&copy; 2022 <span class="footer__author">FreeBeeGo</span></p>
   </footer>
+
+  <template id="sig-in-disclaimer">
+    <p class="sig-in-disclaimer">
+      Please <span class="sig-in-disclaimer__anchor" id="additional-sign-anchor">sign in</span>
+    </p>
+  </template>
+
+  <template id="market">
+    <div class="market">
+      <label>
+        Select the pair:
+        <select name="pairs" class="pairs-select">
+        </select>
+      </label>
+
+      <div class="order-book">
+        <div class="order-book__title-row"></div>
+
+        <div class="order-book__sell-container"></div>
+        <div class="order-book__spread">
+          <span class="order-book__title-cell"></span>
+          <span class="order-book__title-cell"></span>
+          <span class="order-book__title-cell"></span>
+        </div>
+        <div class="order-book__buy-container"></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="order-book-row">
+    <div class="order-book__row">
+      <span class="order-book__cell"></span>
+      <span class="order-book__cell"></span>
+      <span class="order-book__cell"></span>
+    </div>
+  </template>
 </body>
 </html>

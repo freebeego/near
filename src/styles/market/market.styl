@@ -1,0 +1,68 @@
+.market
+  margin-top 40px
+  display flex
+  flex-direction column
+  align-items center
+  width 100%
+
+.pairs-select
+  margin-left 6px
+
+.order-book
+  margin-top 40px
+  padding 20px
+  background-color aliceblue
+  min-width 320px
+  max-width 480px
+  width 100%
+
+  &__row
+    display flex
+    justify-content space-between
+
+  &__title-row
+    display flex
+    justify-content space-between
+    font-weight bold
+
+  &__title-cell
+    display flex
+    justify-content flex-end
+    width 34%
+    padding-right 30px
+
+    &:first-of-type
+      justify-content flex-start
+      width 33%
+      padding-right 0
+
+    &:last-of-type
+      width 33%
+      padding-right 0
+
+  &__sell-container
+    margin-top 8px
+
+  &__spread
+    margin-top 8px
+    font-weight bold
+    display flex
+    justify-content space-between
+
+  &__buy-container
+    margin-top 8px
+
+  &__cell
+    display flex
+    justify-content flex-end
+    width 34%
+    padding-right 28px
+
+    &:first-of-type
+      justify-content flex-start
+      width 33%
+      padding-right 0
+
+    &:last-of-type
+      width 33%
+      padding-right 0
